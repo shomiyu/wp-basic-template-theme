@@ -1,0 +1,52 @@
+@use "functions";
+@use "setting";
+
+/*
+  base
+-----------------------------------------------------*/
+html {
+  box-sizing: border-box;
+  font-family: setting.$font-set-primary;
+  height: 100%;
+  letter-spacing: 0.05em;
+  word-break: break-all;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: setting.$base-color;
+  color: setting.$primary-text-color;
+  font-size: functions.fz(16);
+  height: 100%;
+  line-height: 1.5;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}

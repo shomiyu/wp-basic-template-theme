@@ -1,0 +1,40 @@
+//============================================
+//  SETTINGS
+//============================================
+
+// Content Width
+//--------------------------------------------
+$content-width: 1200px !default;
+
+// Breack Points
+//--------------------------------------------
+$breakpoints: (
+  "sp": 480px,
+  "tab": 768px,
+  "lap": 1024px,
+  "desk": 1200px,
+) !default;
+
+// Color Setings
+//--------------------------------------------
+$color-black: #1c1c1c;
+$color-white: #fff;
+$color-off-white: #fafafa;
+$color-light-gray: #ddd;
+$color-green: #3caea3;
+$color-yellow: #f6d55c;
+$color-blue: #179ad1;
+$color-red: #db3100;
+
+$base-color: $color-off-white;
+$main-color: $color-green;
+$accent-color: $color-blue;
+$disabled-color: $color-light-gray;
+$error-color: $color-red;
+$primary-text-color: $color-black;
+$secondary-text-color: $color-white;
+
+// Typeface
+//--------------------------------------------
+$font-set-primary: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka",
+  "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;

@@ -1,0 +1,35 @@
+{
+  "name": "futaba-wp-theme-with-webpack",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "yarn run clean && webpack --mode=development --watch",
+    "test": "yarn run clean && webpack --mode=development",
+    "build": "yarn && yarn run clean && webpack --mode=production"
+  },
+  "browserslist": [
+    "> 3% in JP",
+    "ie 11",
+    "android 4.4",
+    "last 1 versions"
+  ],
+  "dependencies": {
+    "ress": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-flexbugs-fixes": "^4.2.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-sort-media-queries": "^1.1.20",
+    "rimraf": "^3.0.2",
+    "sass": "^1.35.1",
+    "sass-loader": "^8.0.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
