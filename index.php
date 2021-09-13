@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <a id="js-goToTop" class="p-goToTop__link" href="#top">TOPへ戻る</a>
     <?php wp_footer(); ?>
 </body>
 </html>
