@@ -1,12 +1,12 @@
-@use "functions";
-@use "setting";
+@use "functions" as func;
+@use "setting" as set;
 
 /*
   base
 -----------------------------------------------------*/
 html {
   box-sizing: border-box;
-  font-family: setting.$font-set-primary;
+  font-family: set.$font-set-primary;
   height: 100%;
   letter-spacing: 0.05em;
   word-break: break-all;
@@ -19,9 +19,9 @@ html {
 }
 
 body {
-  background-color: setting.$base-color;
-  color: setting.$primary-text-color;
-  font-size: functions.fz(16);
+  background-color: set.$base-color-primary;
+  color: set.$text-color-primary;
+  font-size: func.fz(16);
   height: 100%;
   line-height: 1.5;
 }

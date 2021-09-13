@@ -1,0 +1,63 @@
+@use "../../foundation/mixin";
+
+/**
+ * 上下マージン
+ * - 10px
+ * - 15px
+ * - 20px
+ * - 25px
+ * - 30px
+ * - 35px
+ * - 40px
+ * - 45px
+ * - 50px
+ * - 55px
+ * - 60px
+ */
+$marginLists: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
+
+@each $marginList in $marginLists {
+  .u-mb-sp-#{$marginList} {
+    margin-bottom: #{$marginList}px;
+  }
+
+  .u-mt-sp-#{$marginList} {
+    margin-top: #{$marginList}px;
+  }
+
+  .u-mb-tab-#{$marginList} {
+    @include mixin.mq(tab) {
+      margin-bottom: #{$marginList}px;
+    }
+  }
+
+  .u-mt-tab-#{$marginList} {
+    @include mixin.mq(tab) {
+      margin-top: #{$marginList}px;
+    }
+  }
+
+  .u-mb-lap-#{$marginList} {
+    @include mixin.mq(lap) {
+      margin-bottom: #{$marginList}px;
+    }
+  }
+
+  .u-mt-lap-#{$marginList} {
+    @include mixin.mq(lap) {
+      margin-top: #{$marginList}px;
+    }
+  }
+
+  .u-mb-desk-#{$marginList} {
+    @include mixin.mq(desk) {
+      margin-bottom: #{$marginList}px;
+    }
+  }
+
+  .u-mt-desk-#{$marginList} {
+    @include mixin.mq(desk) {
+      margin-top: #{$marginList}px;
+    }
+  }
+}
