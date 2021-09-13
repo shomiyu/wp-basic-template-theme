@@ -1,4 +1,5 @@
 const path = require("path")
+const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
 
@@ -9,9 +10,12 @@ const dir = {
 
 module.exports = (env, argv) => ({
   devtool: argv.mode === "development" ? "source-map" : false,
-  entry: [`./${dir.src}/js/project.js`, `./${dir.src}/scss/project.scss`],
+  entry: {
+    main: [`./${dir.src}/js/project.js`, `./${dir.src}/scss/project.scss`],
+    editor: [`./${dir.src}/scss/editor-style.scss`],
+  },
   output: {
-    filename: `./${dir.dist}/js/project-bundle.js`,
+    filename: `./${dir.dist}/js/[name].js`,
     path: path.resolve(__dirname),
   },
   module: {
@@ -71,8 +75,9 @@ module.exports = (env, argv) => ({
     ],
   },
   plugins: [
+    new RemoveEmptyScriptsPlugin(),
     new MiniCssExtractPlugin({
-      filename: `./${dir.dist}/css/project-bundle.css`,
+      filename: `./${dir.dist}/css/[name].css`,
     }),
     new CopyPlugin({
       patterns: [

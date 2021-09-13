@@ -30,8 +30,8 @@ function add_files() {
 
   // ダッシュボードまたは管理画面の表示中以外のときに適用
     if (!is_admin()) {
-        wp_script('project-js', '/dist/js/project-bundle.js');
-        wp_css('project-css', '/dist/css/project-bundle.css');
+        wp_script('project-js', '/dist/js/main.js');
+        wp_css('project-css', '/dist/css/main.css');
         wp_css('style', '/style.css');
         wp_web_font();
     }

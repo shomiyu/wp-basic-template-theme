@@ -10,4 +10,4 @@ add_theme_support('wp-block-styles');
 add_theme_support('editor-styles');
 
 // Add editor style
-add_editor_style('editor-style.css');
+add_editor_style('/dist/css/editor.css');
