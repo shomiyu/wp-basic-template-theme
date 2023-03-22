@@ -17,64 +17,12 @@ $breakpoints: (
 
 // Color Setings
 //--------------------------------------------
-// white
-$palette-white-000: #fff;
-
-// gray
-$palette-gray-100: #f0f0f0;
-$palette-gray-200: #e2e7e4;
-$palette-gray-300: #bfbfbf;
-$palette-gray-500: #a2a2a2;
-$palette-gray-800: #2d3324;
-$palette-gray-900: #333333;
-
-// red
-$palette-red-100: #f9f3f3;
-$palette-red-200: #fae5e5;
-$palette-red-900: #eb655e;
-
-// green
-$palette-green-100: #f6f9f7;
-$palette-green-200: #e8f5e7;
-$palette-green-900: #74c55a;
-
-// yellow
-$palette-yellow-800: #fffca1;
-
-// blue
-$palette-blue-100: #f3f6fa;
-$palette-blue-800: #70a5e7;
-$palette-blue-900: #5481de;
-
-// base
-$base-color-primary: $palette-green-100;
-$base-color-secondary: $palette-white-000;
-$base-color-gray: $palette-gray-100;
-$base-color-blue: $palette-blue-100;
-
-// main
-$main-color-primary: $palette-green-900;
-
-// accent
-$accent-color-blue: $palette-blue-900;
-$accent-color-red: $palette-red-900;
-
-// text
-$text-color-primary: $palette-gray-900;
-$text-color-accent: $palette-green-900;
-$text-color-dark-gray: $palette-gray-500;
-$text-color-white: $palette-white-000;
-$text-color-link: $palette-blue-900;
-
-// border
-$border-color-light-green: $palette-green-100;
-$border-color-gray: $palette-gray-200;
-
-// sistem
-$disabled-color: $palette-gray-300;
-$error-color: $palette-red-900;
+:root {
+  --color-text-main: #000;
+  --color-bg-white: #fff;
+}
 
 // Typeface
 //--------------------------------------------
-$font-set-primary: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic,
+$font-base: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic,
   "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;

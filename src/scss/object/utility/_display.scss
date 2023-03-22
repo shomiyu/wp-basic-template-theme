@@ -1,0 +1,25 @@
+@use "../../foundation/setting" as *;
+@use "../../foundation/functions" as *;
+@use "../../foundation/mixin" as *;
+
+.u-display-sp-only {
+  @include mq() {
+    display: none;
+  }
+}
+
+.u-display-tab {
+  display: none;
+
+  @include mq() {
+    display: block;
+  }
+}
+
+.u-display-pc {
+  display: none;
+
+  @include mq(lap) {
+    display: block;
+  }
+}

@@ -8,6 +8,7 @@
 @use "foundation/mixin";
 @use "../../node_modules/ress/dist/ress.min.css";
 @use "foundation/base";
+@use "foundation/adminbar";
 
 /* =====================================================
   2.0 - Layout
@@ -29,3 +30,5 @@
   3.2 - Utility
 ----------------------------------------------------- */
 @use "object/utility/margin" as utilityMargin;
+@use "object/utility/display" as utilityDisplay;
+@use "object/utility/anchor" as utilityAnchor;

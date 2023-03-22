@@ -17,8 +17,6 @@ function add_files() {
     function wp_web_font() {
         wp_enqueue_style( 'google-font-noto-sans', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap' );
         wp_enqueue_style( 'google-font-bebas-neue', 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' );
-        wp_enqueue_style( 'google-font-ubuntu', 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap' );
-        wp_enqueue_style( 'google-font-m-plus-rounded', 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap' );
     }
 
     function wp_script($script_name, $file_path, $bool = true) {

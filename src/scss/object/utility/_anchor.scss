@@ -1,0 +1,13 @@
+@use "../../foundation/setting" as *;
+@use "../../foundation/functions" as *;
+@use "../../foundation/mixin" as *;
+
+.u-anchor {
+  padding-top: 80px;
+  margin-top: -80px;
+
+  @include mq(lap) {
+    padding-top: 120px;
+    margin-top: -120px;
+  }
+}
