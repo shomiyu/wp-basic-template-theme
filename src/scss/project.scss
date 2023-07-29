@@ -13,6 +13,9 @@
 /* =====================================================
   2.0 - Layout
 ===================================================== */
+@use "layout/wrapper";
+@use "layout/section";
+@use "layout/container";
 
 /* =====================================================
   3.0 - Object
@@ -29,6 +32,7 @@
 /*
   3.2 - Utility
 ----------------------------------------------------- */
-@use "object/utility/margin" as utilityMargin;
-@use "object/utility/display" as utilityDisplay;
-@use "object/utility/anchor" as utilityAnchor;
+@use "object/utility/margin";
+@use "object/utility/display";
+@use "object/utility/anchor";
+@use "object/utility/font-size";

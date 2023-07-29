@@ -1,0 +1,11 @@
+@use "../foundation/setting" as *;
+@use "../foundation/functions" as *;
+@use "../foundation/mixin" as *;
+
+.l-section {
+  padding: 80px 0;
+
+  @include mq() {
+    padding: 120px 0;
+  }
+}
