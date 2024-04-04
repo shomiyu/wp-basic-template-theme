@@ -9,6 +9,7 @@ html {
   font-family: $font-base;
   height: 100%;
   word-break: break-all;
+  scroll-behavior: smooth;
 }
 
 *,

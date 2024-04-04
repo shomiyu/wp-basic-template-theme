@@ -4,11 +4,13 @@
 //----------------------------------------------------
 
 // テーマ内の画像パスを取得
+// ex. get_img_src_uri() . '/shared/test.png'
 function get_img_src_uri() {
   echo esc_url( get_theme_file_uri() ) . '/src/img';
 }
 
-// 引数のドメインとURLを比較して真偽値へ返す
+// ドメインを取得
+// ex. if ( get_domain() == 'xxx.co.jp' ) { ... }
 function get_domain() {
   return $_SERVER['HTTP_HOST'];
 }
