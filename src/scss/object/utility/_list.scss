@@ -1,0 +1,65 @@
+@use "../../foundation/setting" as *;
+@use "../../foundation/functions" as *;
+@use "../../foundation/mixin" as *;
+
+.u-listDot {
+  list-style: none;
+
+  li {
+    color: var(--color-black-80);
+    font-size: fz(12);
+    line-height: 1.75;
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      content: "・";
+      position: absolute;
+      top: calc(1em * 1.75 / 2);
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.u-listNote {
+  list-style: none;
+
+  li {
+    color: var(--color-black-80);
+    font-size: fz(12);
+    line-height: 1.75;
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      content: "※";
+      position: absolute;
+      top: calc(1em * 1.75 / 2);
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.u-listNoteNumber {
+  counter-reset: note;
+  list-style: none;
+
+  li {
+    color: var(--color-black-80);
+    counter-increment: note;
+    font-size: fz(12);
+    line-height: 1.75;
+    padding-left: calc(2em + 8px);
+    position: relative;
+
+    &::before {
+      content: "※" counter(note);
+      position: absolute;
+      top: calc(1em * 1.75 / 2);
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
