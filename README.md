@@ -2,7 +2,7 @@
 
 WordPress 用の webpack ベースのテンプレート。
 
-## 1. 機能 ( /functions/\* )
+## 機能 ( /functions/\* )
 
 不要なものはファイルごと削除すること。
 
@@ -34,9 +34,7 @@ WordPress 用の webpack ベースのテンプレート。
 - CSS や JS の外部ファイルから末尾の ?ver=x.x.x を削除 ( remove-file-versions.php )
 - OGP 生成（ ogp.php ）
 
----
-
-## 2. コンポーネント ( /components/\* )
+## コンポーネント ( /components/\* )
 
 style は未設定。<br>`<?php get_template_part('components/breadcrumb'); ?>`でテンプレートに挿入して使用する。
 
@@ -44,17 +42,13 @@ style は未設定。<br>`<?php get_template_part('components/breadcrumb'); ?>`�
 - ページトップリンク ( go-to-top.php )
 - ページネーション ( pagination.php )
 
----
-
-## 3. JavaScript
+## JavaScript
 
 jQuery 対応。ES Modules を採用しているため 1 機能 1 ファイルで管理すること。
 
 - ユニークユーザ ID を生成（session strage）
 
----
-
-## 4. 推奨プラグイン
+## 推奨プラグイン
 
 ### 必須レベル
 
@@ -79,9 +73,7 @@ jQuery 対応。ES Modules を採用しているため 1 機能 1 ファイル�
 
 ※SEO 関連のプラグインを入れる場合は functions から OGP 生成関数を削除すること。
 
----
-
-## 5.開発環境
+## 開発環境
 
 対象環境
 
@@ -103,8 +95,6 @@ yarn dev
 yarn build
 ```
 
----
-
-## 6. デプロイ
+## デプロイ
 
 ビルドしてからこのテーマフォルダごとアップロードする。<br>node_modules や git など不要なものを削除してからアップロードすると良い。
