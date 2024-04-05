@@ -31,32 +31,6 @@ add_action( 'admin_menu', 'change_post_menu_label' );
 
 
 //----------------------------------------------------
-//  News一覧表示項目の並び変更
-//----------------------------------------------------
-function custom_post_posts_columns_sort($columns){
-    $sort_number = array(
-        'cb' => 0,
-        'title' => 1,
-        'author' => 2,
-        'comments' => 3,
-        'date' => 4,
-        'categories' => 5
-    );
-
-    $sort = array();
-
-    foreach ($columns as $key => $value) {
-        $sort[] = $sort_number{$key};
-    }
-
-    array_multisort($sort,$columns);
-    return $columns;
-}
-
-add_filter('manage_post_posts_columns', 'custom_post_posts_columns_sort');
-
-
-//----------------------------------------------------
 //  投稿からタグを削除
 //----------------------------------------------------
 // function my_unregister_taxonomies() {
