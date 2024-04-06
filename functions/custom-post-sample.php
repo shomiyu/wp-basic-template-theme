@@ -24,6 +24,14 @@ function sample_post_type_init() {
         'query_var'     => true,
         'show_in_rest'  => true,
     ];
-    register_post_type('refresh', $args);
+    register_post_type('sample', $args);
+
+    $taxonomy_args = [
+        'label'         => 'サンプルカテゴリー',
+        'hierarchical'  => true,
+        'public'        => true,
+        'show_in_rest'  => true,
+    ];
+    register_taxonomy( 'sample_category', 'sample', $taxonomy_args);
 }
 add_action('init', 'sample_post_type_init');
