@@ -1,8 +1,8 @@
 @charset 'UTF-8';
 
-@use "./foundation/mixin";
-@use "./foundation/functions" as func;
-@use "./foundation/setting" as set;
+@use "./foundation/mixin" as *;
+@use "./foundation/functions" as *;
+@use "./foundation/setting" as *;
 
 /* =====================================================
   Gutenberg editor style
